@@ -5,7 +5,7 @@
 <title>ClojureScript for Scale</title>
 <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
 <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme"/>
-<link rel="stylesheet" href="./extra.css"/>
+<link rel="stylesheet" href="extra.css"/>
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
     if( window.location.search.match( /print-pdf/gi ) ) {
@@ -135,8 +135,8 @@
 </section>
 </section>
 <section>
-<section id="slide-orgheadline13">
-<h2 id="orgheadline13">Pure Functions To The Rescue!</h2>
+<section id="slide-orgheadline14">
+<h2 id="orgheadline14">Pure Functions To The Rescue!</h2>
 <ul>
 <li>Pure functions are testable.</li>
 <li>Pure functions are rational.</li>
@@ -163,17 +163,31 @@
 </p>
 
 </section>
+<section id="slide-orgheadline13">
+<h3 id="orgheadline13">Decomplexition To The Rescue!</h3>
+<ul>
+<li>Separation</li>
+<li>Separation</li>
+<li>Separation</li>
+
+</ul>
+
+<p>
+<i>╲</i>\╭⁞ ͡° ͜ʖ ͡° ⁞╮/\╱﻿\
+</p>
+
+</section>
 </section>
 <section>
-<section id="slide-orgheadline21">
-<h2 id="orgheadline21">What Would That Look Like?</h2>
+<section id="slide-orgheadline22">
+<h2 id="orgheadline22">What Would That Look Like?</h2>
 <p>
 ԅ⁞ ◑ ₒ ◑ ⁞ᓄ
 </p>
 
 </section>
-<section id="slide-orgheadline14">
-<h3 id="orgheadline14">A queue of things to do&#x2026;</h3>
+<section id="slide-orgheadline15">
+<h3 id="orgheadline15">A queue of things to do&#x2026;</h3>
 <div class="org-src-container">
 
 <pre  class="src src-clojure"><span style="color: #66d9ef;">(</span>message, message, message, message ...<span style="color: #66d9ef;">)</span>
@@ -181,8 +195,8 @@
 </div>
 
 </section>
-<section id="slide-orgheadline15">
-<h3 id="orgheadline15">A function to move the world forward&#x2026;</h3>
+<section id="slide-orgheadline16">
+<h3 id="orgheadline16">A function to move the world forward&#x2026;</h3>
 <div class="org-src-container">
 
 <pre  class="src src-clojure"><span style="color: #66d9ef;">(</span>process message app-state<span style="color: #66d9ef;">)</span> &#8658; new-app-state
@@ -190,8 +204,8 @@
 </div>
 
 </section>
-<section id="slide-orgheadline16">
-<h3 id="orgheadline16">The rendering we know &amp; love&#x2026;</h3>
+<section id="slide-orgheadline17">
+<h3 id="orgheadline17">The rendering we know &amp; love&#x2026;</h3>
 <div class="org-src-container">
 
 <pre  class="src src-clojure"><span style="color: #66d9ef;">(</span>render app-state<span style="color: #66d9ef;">)</span>
@@ -199,8 +213,8 @@
 </div>
 
 </section>
-<section id="slide-orgheadline17">
-<h3 id="orgheadline17">A mental Model</h3>
+<section id="slide-orgheadline18">
+<h3 id="orgheadline18">A mental Model</h3>
 <div class="org-src-container">
 
 <pre  class="src src-haskell">t0 <span style="color: #F92672; font-style: italic;">:</span> <span style="color: #66d9ef;">(</span><span style="color: #66D9EF;">Message</span><span style="color: #F92672;">,</span> <span style="color: #66D9EF;">Data</span><span style="color: #66d9ef;">)</span> <span style="color: #F92672;">&#10230;</span> <span style="color: #66D9EF;">NewData</span>
@@ -215,12 +229,12 @@ t2 <span style="color: #F92672; font-style: italic;">:</span> <span style="color
 </div>
 
 </section>
-<section id="slide-orgheadline19">
-<h3 id="orgheadline19">How do we do it?</h3>
-<div class="outline-text-3" id="text-orgheadline19">
+<section id="slide-orgheadline20">
+<h3 id="orgheadline20">How do we do it?</h3>
+<div class="outline-text-3" id="text-orgheadline20">
 </div></section>
-<section id="slide-orgheadline18">
-<h4 id="orgheadline18">Core Yaysync</h4>
+<section id="slide-orgheadline19">
+<h4 id="orgheadline19">Core Yaysync</h4>
 <p>
 s( ^ ‿ ^)-b
 </p>
@@ -230,8 +244,8 @@ s( ^ ‿ ^)-b
 </p>
 
 </section>
-<section id="slide-orgheadline20">
-<h3 id="orgheadline20">HTML is responsible for&#x2026;</h3>
+<section id="slide-orgheadline21">
+<h3 id="orgheadline21">HTML is responsible for&#x2026;</h3>
 <ul>
 <li>Rendering</li>
 <li><i>plus</i> letting the user send messages.</li>
@@ -241,8 +255,8 @@ s( ^ ‿ ^)-b
 </section>
 </section>
 <section>
-<section id="slide-orgheadline22">
-<h2 id="orgheadline22">Show Me Some Code</h2>
+<section id="slide-orgheadline23">
+<h2 id="orgheadline23">Show Me Some Code</h2>
 
 <div class="figure">
 <p><img src="./bruce.jpg" alt="bruce.jpg" />
@@ -252,15 +266,15 @@ s( ^ ‿ ^)-b
 </section>
 </section>
 <section>
-<section id="slide-orgheadline28">
-<h2 id="orgheadline28">The Modularisation Problem</h2>
+<section id="slide-orgheadline29">
+<h2 id="orgheadline29">The Modularisation Problem</h2>
 <p>
 ¯\_| ✖ 〜 ✖ |_/¯
 </p>
 
 </section>
-<section id="slide-orgheadline23">
-<h3 id="orgheadline23">MVC When It's Simple</h3>
+<section id="slide-orgheadline24">
+<h3 id="orgheadline24">MVC When It's Simple</h3>
 <div class="org-src-container">
 
 <pre  class="src src-ascii">M --- C --- V
@@ -268,8 +282,8 @@ s( ^ ‿ ^)-b
 </div>
 
 </section>
-<section id="slide-orgheadline24">
-<h3 id="orgheadline24">MVC As It Grows</h3>
+<section id="slide-orgheadline25">
+<h3 id="orgheadline25">MVC As It Grows</h3>
 <div class="org-src-container">
 
 <pre  class="src src-ascii">   M --- C --- V
@@ -291,42 +305,42 @@ M - C - V     M - C - V
 </div>
 
 </section>
-<section id="slide-orgheadline25">
-<h3 id="orgheadline25">The mess is in the mix</h3>
-<div class="org-src-container">
-
-<pre  class="src src-haskell"><span style="color: #66D9EF;">Data</span> <span style="color: #F92672; font-style: italic;">&#10230;</span> <span style="color: #66D9EF;">HTML</span>
-
-<span style="color: #F92672;">+</span>
-
-<span style="color: #66D9EF;">MVC</span>
-
-<span style="color: #F92672;">=</span>
-
-<span style="color: #66D9EF;">MVC</span>
-</pre>
-</div>
-
-</section>
 <section id="slide-orgheadline26">
-<h3 id="orgheadline26">Here's The Solution</h3>
+<h3 id="orgheadline26">The mess is in the mix</h3>
 <div class="org-src-container">
 
 <pre  class="src src-haskell"><span style="color: #66D9EF;">Data</span> <span style="color: #F92672; font-style: italic;">&#10230;</span> <span style="color: #66D9EF;">HTML</span>
 
 <span style="color: #F92672;">+</span>
 
-<span style="color: #66D9EF;">Data</span> <span style="color: #F92672; font-style: italic;">&#10230;</span> <span style="color: #66D9EF;">HTML</span>
+<span style="color: #66D9EF;">MVC</span>
 
 <span style="color: #F92672;">=</span>
 
-<span style="color: #66D9EF;">Data</span> <span style="color: #F92672; font-style: italic;">&#10230;</span> <span style="color: #66D9EF;">HTML</span>
+<span style="color: #66D9EF;">MVC</span>
 </pre>
 </div>
 
 </section>
 <section id="slide-orgheadline27">
-<h3 id="orgheadline27">Mix Things of The Same Kind</h3>
+<h3 id="orgheadline27">Here's The Solution</h3>
+<div class="org-src-container">
+
+<pre  class="src src-haskell"><span style="color: #66D9EF;">Data</span> <span style="color: #F92672; font-style: italic;">&#10230;</span> <span style="color: #66D9EF;">HTML</span>
+
+<span style="color: #F92672;">+</span>
+
+<span style="color: #66D9EF;">Data</span> <span style="color: #F92672; font-style: italic;">&#10230;</span> <span style="color: #66D9EF;">HTML</span>
+
+<span style="color: #F92672;">=</span>
+
+<span style="color: #66D9EF;">Data</span> <span style="color: #F92672; font-style: italic;">&#10230;</span> <span style="color: #66D9EF;">HTML</span>
+</pre>
+</div>
+
+</section>
+<section id="slide-orgheadline28">
+<h3 id="orgheadline28">Mix Things of The Same Kind</h3>
 <div class="org-src-container">
 
 <pre  class="src src-text">     M
@@ -355,8 +369,8 @@ M --- C --- V
 </section>
 </section>
 <section>
-<section id="slide-orgheadline29">
-<h2 id="orgheadline29">Summary</h2>
+<section id="slide-orgheadline30">
+<h2 id="orgheadline30">Summary</h2>
 <ul>
 <li>We can make UIs <i>mostly</i> pure.</li>
 <li>We can make <i>most</i> parts testable.</li>
@@ -374,8 +388,8 @@ We <i>should</i> do all these things.
 </section>
 </section>
 <section>
-<section id="slide-orgheadline30">
-<h2 id="orgheadline30">Links</h2>
+<section id="slide-orgheadline31">
+<h2 id="orgheadline31">Links</h2>
 <ul>
 <li>The Framework</li>
 
