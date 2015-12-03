@@ -2,7 +2,7 @@
 #+OPTIONS: reveal_history:t
 #+REVEAL_THEME: black
 #+REVEAL_TRANS: convex
-#+REVEAL_EXTRA_CSS:
+#+REVEAL_EXTRA_CSS: extra.css
 #+COPYRIGHT: © Kris Jenkins, 2015
 #+AUTHOR:
 #+TITLE: ClojureScript for Scale
@@ -139,7 +139,7 @@ s( ^ ‿ ^)-b
 
 * Show Me Some Code
 
-(╭ರ_•́)
+[[./bruce.jpg]]
 
 * The Modularisation Problem
 
@@ -173,7 +173,33 @@ M --- C --- V
 
 ** The mess is in the mix
 
+#+BEGIN_SRC haskell
+Data ⟶ HTML
+
++
+
+MVC
+
+=
+
+MVC
+#+END_SRC
+
 ** Here's The Solution
+
+#+BEGIN_SRC haskell
+Data ⟶ HTML
+
++
+
+Data ⟶ HTML
+
+=
+
+Data ⟶ HTML
+#+END_SRC
+
+** Mix Things of The Same Kind
 
 #+BEGIN_SRC text
        M
