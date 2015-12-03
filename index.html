@@ -5,7 +5,7 @@
 <title>ClojureScript for Scale</title>
 <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
 <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme"/>
-<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="./extra.css"/>
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
     if( window.location.search.match( /print-pdf/gi ) ) {
@@ -243,15 +243,17 @@ s( ^ ‿ ^)-b
 <section>
 <section id="slide-orgheadline22">
 <h2 id="orgheadline22">Show Me Some Code</h2>
-<p>
-(╭ರ_•́)
+
+<div class="figure">
+<p><img src="./bruce.jpg" alt="bruce.jpg" />
 </p>
+</div>
 
 </section>
 </section>
 <section>
-<section id="slide-orgheadline27">
-<h2 id="orgheadline27">The Modularisation Problem</h2>
+<section id="slide-orgheadline28">
+<h2 id="orgheadline28">The Modularisation Problem</h2>
 <p>
 ¯\_| ✖ 〜 ✖ |_/¯
 </p>
@@ -291,10 +293,40 @@ M - C - V     M - C - V
 </section>
 <section id="slide-orgheadline25">
 <h3 id="orgheadline25">The mess is in the mix</h3>
+<div class="org-src-container">
+
+<pre  class="src src-haskell"><span style="color: #66D9EF;">Data</span> <span style="color: #F92672; font-style: italic;">&#10230;</span> <span style="color: #66D9EF;">HTML</span>
+
+<span style="color: #F92672;">+</span>
+
+<span style="color: #66D9EF;">MVC</span>
+
+<span style="color: #F92672;">=</span>
+
+<span style="color: #66D9EF;">MVC</span>
+</pre>
+</div>
 
 </section>
 <section id="slide-orgheadline26">
 <h3 id="orgheadline26">Here's The Solution</h3>
+<div class="org-src-container">
+
+<pre  class="src src-haskell"><span style="color: #66D9EF;">Data</span> <span style="color: #F92672; font-style: italic;">&#10230;</span> <span style="color: #66D9EF;">HTML</span>
+
+<span style="color: #F92672;">+</span>
+
+<span style="color: #66D9EF;">Data</span> <span style="color: #F92672; font-style: italic;">&#10230;</span> <span style="color: #66D9EF;">HTML</span>
+
+<span style="color: #F92672;">=</span>
+
+<span style="color: #66D9EF;">Data</span> <span style="color: #F92672; font-style: italic;">&#10230;</span> <span style="color: #66D9EF;">HTML</span>
+</pre>
+</div>
+
+</section>
+<section id="slide-orgheadline27">
+<h3 id="orgheadline27">Mix Things of The Same Kind</h3>
 <div class="org-src-container">
 
 <pre  class="src src-text">     M
@@ -323,8 +355,8 @@ M --- C --- V
 </section>
 </section>
 <section>
-<section id="slide-orgheadline28">
-<h2 id="orgheadline28">Summary</h2>
+<section id="slide-orgheadline29">
+<h2 id="orgheadline29">Summary</h2>
 <ul>
 <li>We can make UIs <i>mostly</i> pure.</li>
 <li>We can make <i>most</i> parts testable.</li>
@@ -342,8 +374,8 @@ We <i>should</i> do all these things.
 </section>
 </section>
 <section>
-<section id="slide-orgheadline29">
-<h2 id="orgheadline29">Links</h2>
+<section id="slide-orgheadline30">
+<h2 id="orgheadline30">Links</h2>
 <ul>
 <li>The Framework</li>
 
